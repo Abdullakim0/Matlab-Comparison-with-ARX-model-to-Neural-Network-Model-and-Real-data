@@ -1,0 +1,1314 @@
+Model {
+  Name			  "neural_network_and_real_data"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Mon Dec 11 14:57:00 2023"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Admin"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Dec 11 15:00:37 2023"
+  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "96"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ElementaryMath
+      Operator		      "sin"
+    }
+    Block {
+      BlockType		      From
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Goto
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "neural_network_and_real_data"
+    Location		    [2, 75, 2558, 1379]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Abs
+      Name		      "Abs"
+      Position		      [720, 150, 750, 180]
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [965, 245, 995, 275]
+      Value		      "96"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [1175, 215, 1265, 245]
+      FontSize		      10
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide"
+      Ports		      [2, 1]
+      Position		      [865, 175, 905, 215]
+      FontSize		      10
+      Inputs		      "*/"
+      ShowAdditionalParam     on
+      InputSameDT	      off
+      OutDataTypeMode	      "double"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Divide1"
+      Ports		      [2, 1]
+      Position		      [1055, 210, 1095, 250]
+      FontSize		      10
+      Inputs		      "*/"
+      ShowAdditionalParam     on
+      InputSameDT	      off
+      OutDataTypeMode	      "double"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace"
+      Position		      [225, 63, 290, 87]
+      FontSize		      10
+      VariableName	      "[t inpt']"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace1"
+      Position		      [235, 188, 300, 212]
+      FontSize		      10
+      VariableName	      "[t outbefore]"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [365, 185, 395, 215]
+      Gain		      "1564052"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Neural Network"
+      Ports		      [1, 1]
+      Position		      [370, 55, 430, 95]
+      BackgroundColor	      "lightBlue"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Neural Network"
+	Location		[484, 94, 1064, 382]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "p{1}"
+	  Position		  [40, 40, 60, 60]
+	  BackgroundColor	  "magenta"
+	  PortDimensions	  "14"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  " a{1} "
+	  Position		  [40, 120, 60, 140]
+	  GotoTag		  "feedback1"
+	  MaskDisplay		  "plot(cos(0:.1:2*pi),sin(0:.1:2*pi))"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Layer 1"
+	  Ports			  [1, 1]
+	  Position		  [190, 40, 250, 60]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Layer 1"
+	    Location		    [484, 94, 1064, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "p{1}"
+	      Position		      [40, 40, 60, 60]
+	      BackgroundColor	      "magenta"
+	      PortDimensions	      "14"
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Delays 1"
+	      Ports		      [1, 1]
+	      Position		      [100, 40, 120, 60]
+	      BackgroundColor	      "lightBlue"
+	      TreatAsAtomicUnit	      off
+	      MaskDisplay	      "disp('TDL')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"Delays 1"
+		Location		[484, 94, 1064, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "p{1}"
+		  Position		  [60, 40, 80, 60]
+		  Orientation		  "down"
+		  BackgroundColor	  "magenta"
+		  NamePlacement		  "alternate"
+		  PortDimensions	  "14"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "mux"
+		  Ports			  [1, 1]
+		  Position		  [200, 60, 240, 80]
+		  BackgroundColor	  "lightBlue"
+		  Inputs		  "1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "pd{1,1}"
+		  Position		  [300, 60, 320, 80]
+		  BackgroundColor	  "magenta"
+		}
+		Line {
+		  SrcBlock		  "p{1}"
+		  SrcPort		  1
+		  DstBlock		  "mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "mux"
+		  SrcPort		  1
+		  DstBlock		  "pd{1,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IW{1,1}"
+	      Ports		      [1, 1]
+	      Position		      [160, 40, 200, 60]
+	      BackgroundColor	      "lightBlue"
+	      TreatAsAtomicUnit	      off
+	      MaskDisplay	      "disp('weight')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"IW{1,1}"
+		Location		[484, 94, 1064, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "pd{1,1}"
+		  Position		  [40, 150, 60, 170]
+		  BackgroundColor	  "magenta"
+		  PortDimensions	  "14"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(1,:)'"
+		  Position		  [140, 40, 180, 60]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "[-11.331622007191116;480.7698612352"
+"2266;-244.71826066692819;-215.36506776781869;117.68500710328458;961.371047727"
+"65292;-164.93584774087921;-123.71162401167672;-325.39584551772799;869.3704672"
+"0143348;162.2602095339715;243.93099518166414;250.59760510926006;-41.464262012"
+"614896]"
+		  MaskDisplay		  "disp('weights')"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(2,:)'"
+		  Position		  [140, 100, 180, 120]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "[-248.46088111977173;592.9648987019"
+"4205;-169.99826511296075;6.7210352268005842;-479.55640228789809;-945.29091142"
+"723746;-127.8654249967985;-4.8660732727339644;-66.740410653909109;-1194.91126"
+"69366377;-592.82533601042496;-973.13653211376027;-59.240012956465101;-163.378"
+"20230448131]"
+		  MaskDisplay		  "disp('weights')"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(3,:)'"
+		  Position		  [140, 160, 180, 180]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "[159.88478114481589;510.13893581598"
+"33;-666.21169528304029;122.42329706388527;73.862813450675262;1057.58953800830"
+"77;83.172587324821478;-83.831737188744668;-130.97395062127208;-1449.259370525"
+"705;-445.13943115786509;-243.29810900368994;-218.09638607845807;-207.31554372"
+"028776]"
+		  MaskDisplay		  "disp('weights')"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{1,1}(4,:)'"
+		  Position		  [140, 220, 180, 240]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "[-231.47833275364465;432.9405878294"
+"0772;481.12543704920199;-189.06868666119615;108.88512919705389;634.6085502226"
+"9948;33.238156784438438;-420.44459886676248;-87.906302700763874;457.348797610"
+"95931;-361.47211045958676;296.27717948861425;-94.358408155950343;230.60741605"
+"595427]"
+		  MaskDisplay		  "disp('weights')"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  Ports			  [4, 1]
+		  Position		  [340, 152, 380, 173]
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod1"
+		  Ports			  [2, 1]
+		  Position		  [240, 40, 260, 80]
+		  BackgroundColor	  "lightBlue"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  ""
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod2"
+		  Ports			  [2, 1]
+		  Position		  [240, 100, 260, 140]
+		  BackgroundColor	  "lightBlue"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  ""
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod3"
+		  Ports			  [2, 1]
+		  Position		  [240, 160, 260, 200]
+		  BackgroundColor	  "lightBlue"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  ""
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod4"
+		  Ports			  [2, 1]
+		  Position		  [240, 220, 260, 260]
+		  BackgroundColor	  "lightBlue"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  ""
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "iz{1,1}"
+		  Position		  [420, 150, 440, 170]
+		  BackgroundColor	  "magenta"
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(1,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "pd{1,1}"
+		  SrcPort		  1
+		  Points		  [0, 0]
+		  Branch {
+		    DstBlock		    "dotprod1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod3"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "dotprod4"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "dotprod1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(2,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod2"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(3,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod3"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "IW{1,1}(4,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "dotprod4"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "iz{1,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "b{1}"
+	      Position		      [160, 80, 200, 100]
+	      BackgroundColor	      "lightBlue"
+	      Value		      "[1.7413214757740016;0.69735815383961486"
+";-8.2527879365355368;-3.092693028339442]"
+	      MaskDisplay	      "disp('bias')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "netsum"
+	      Ports		      [2, 1]
+	      Position		      [240, 60, 260, 80]
+	      BackgroundColor	      "lightBlue"
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "tansig"
+	      Ports		      [1, 1]
+	      Position		      [300, 60, 320, 80]
+	      BackgroundColor	      "lightBlue"
+	      SourceBlock	      "neural/Transfer Functions/tansig"
+	      SourceType	      ""
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "a{1}"
+	      Position		      [360, 60, 380, 80]
+	      BackgroundColor	      "magenta"
+	      InitialOutput	      "[0;0;0;0]"
+	    }
+	    Line {
+	      SrcBlock		      "p{1}"
+	      SrcPort		      1
+	      DstBlock		      "Delays 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Delays 1"
+	      SrcPort		      1
+	      DstBlock		      "IW{1,1}"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "IW{1,1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "b{1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "netsum"
+	      SrcPort		      1
+	      DstBlock		      "tansig"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tansig"
+	      SrcPort		      1
+	      DstBlock		      "a{1}"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Layer 2"
+	  Ports			  [1, 1]
+	  Position		  [190, 80, 250, 100]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Layer 2"
+	    Location		    [484, 94, 1064, 382]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "a{1} "
+	      Position		      [40, 40, 60, 60]
+	      BackgroundColor	      "magenta"
+	      PortDimensions	      "4"
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Delays 1"
+	      Ports		      [1, 1]
+	      Position		      [100, 40, 120, 60]
+	      BackgroundColor	      "lightBlue"
+	      TreatAsAtomicUnit	      off
+	      MaskDisplay	      "disp('TDL')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"Delays 1"
+		Location		[484, 94, 1064, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "p{2}"
+		  Position		  [60, 40, 80, 60]
+		  Orientation		  "down"
+		  BackgroundColor	  "magenta"
+		  NamePlacement		  "alternate"
+		  PortDimensions	  "4"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "mux"
+		  Ports			  [1, 1]
+		  Position		  [200, 60, 240, 80]
+		  BackgroundColor	  "lightBlue"
+		  Inputs		  "1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "pd{2,1}"
+		  Position		  [300, 60, 320, 80]
+		  BackgroundColor	  "magenta"
+		}
+		Line {
+		  SrcBlock		  "p{2}"
+		  SrcPort		  1
+		  DstBlock		  "mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "mux"
+		  SrcPort		  1
+		  DstBlock		  "pd{2,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LW{2,1}"
+	      Ports		      [1, 1]
+	      Position		      [160, 40, 200, 60]
+	      BackgroundColor	      "lightBlue"
+	      TreatAsAtomicUnit	      off
+	      MaskDisplay	      "disp('weight')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"LW{2,1}"
+		Location		[484, 94, 1064, 382]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "ad{2,1}"
+		  Position		  [40, 60, 60, 80]
+		  BackgroundColor	  "magenta"
+		  PortDimensions	  "4"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "IW{2,1}(1,:)'"
+		  Position		  [140, 40, 180, 60]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "[-0.85082147972736011;-0.0020020092"
+"638200438;0.0014643763862159755;-0.038719568952694274]"
+		  MaskDisplay		  "disp('weights')"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  Ports			  [1, 1]
+		  Position		  [340, 60, 380, 80]
+		  Inputs		  "1"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "dotprod1"
+		  Ports			  [2, 1]
+		  Position		  [240, 40, 260, 80]
+		  BackgroundColor	  "lightBlue"
+		  SourceBlock		  "neural/Weight Functions/dotprod"
+		  SourceType		  ""
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "lz{2,1}"
+		  Position		  [420, 60, 440, 80]
+		  BackgroundColor	  "magenta"
+		}
+		Line {
+		  SrcBlock		  "IW{2,1}(1,:)'"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ad{2,1}"
+		  SrcPort		  1
+		  DstBlock		  "dotprod1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "dotprod1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "lz{2,1}"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "b{2}"
+	      Position		      [160, 80, 200, 100]
+	      BackgroundColor	      "lightBlue"
+	      Value		      "0.82165548242905306"
+	      MaskDisplay	      "disp('bias')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "netsum"
+	      Ports		      [2, 1]
+	      Position		      [240, 60, 260, 80]
+	      BackgroundColor	      "lightBlue"
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "tansig"
+	      Ports		      [1, 1]
+	      Position		      [300, 60, 320, 80]
+	      BackgroundColor	      "lightBlue"
+	      SourceBlock	      "neural/Transfer Functions/tansig"
+	      SourceType	      ""
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "a{2}"
+	      Position		      [360, 60, 380, 80]
+	      BackgroundColor	      "magenta"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "a{1} "
+	      SrcPort		      1
+	      DstBlock		      "Delays 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Delays 1"
+	      SrcPort		      1
+	      DstBlock		      "LW{2,1}"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "LW{2,1}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "b{2}"
+	      SrcPort		      1
+	      DstBlock		      "netsum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "netsum"
+	      SrcPort		      1
+	      DstBlock		      "tansig"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tansig"
+	      SrcPort		      1
+	      DstBlock		      "a{2}"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "a{1}"
+	  Position		  [380, 40, 400, 60]
+	  GotoTag		  "feedback1"
+	  TagVisibility		  "local"
+	  MaskDisplay		  "plot(cos(0:.1:2*pi),sin(0:.1:2*pi))"
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y{1}"
+	  Position		  [380, 120, 400, 140]
+	  BackgroundColor	  "magenta"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "p{1}"
+	  SrcPort		  1
+	  DstBlock		  "Layer 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Layer 1"
+	  SrcPort		  1
+	  DstBlock		  "a{1}"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " a{1} "
+	  SrcPort		  1
+	  DstBlock		  "Layer 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Layer 2"
+	  SrcPort		  1
+	  DstBlock		  "y{1}"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [1225, 154, 1255, 186]
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [555, 131, 595, 179]
+      ShowName		      off
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum of\nElements"
+      Ports		      [1, 1]
+      Position		      [965, 175, 1005, 215]
+      FontSize		      10
+      Inputs		      "+"
+      ShowAdditionalParam     on
+      InputSameDT	      off
+      OutDataTypeMode	      "double"
+      OutScaling	      "2^-10"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "y{1}"
+      Ports		      [1]
+      Position		      [510, 65, 530, 85]
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData1"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "y{1}1"
+      Ports		      [1]
+      Position		      [435, 260, 455, 280]
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData2"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "y{1}2"
+      Ports		      [1]
+      Position		      [955, 130, 975, 150]
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData3"
+      DataFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "From\nWorkspace1"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [50, 0; 0, 10]
+      DstBlock		      "Abs"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Abs"
+      SrcPort		      1
+      Points		      [45, 0; 0, 20]
+      DstBlock		      "Divide"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	Points			[10, 0; 0, -5]
+	Branch {
+	  Points		  [0, -25]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 10]
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	Points			[0, 75; 10, 0]
+	DstBlock		"y{1}1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Divide"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"Sum of\nElements"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -55]
+	DstBlock		"y{1}2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum of\nElements"
+      SrcPort		      1
+      Points		      [15, 0; 0, 25]
+      DstBlock		      "Divide1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Divide1"
+      SrcPort		      1
+      Points		      [0, 0; 40, 0]
+      Branch {
+	DstBlock		"Display"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [20, 0; 0, -20]
+      DstBlock		      "Divide1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From\nWorkspace"
+      SrcPort		      1
+      DstBlock		      "Neural Network"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Neural Network"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"y{1}"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 80]
+	DstBlock		"Sum"
+	DstPort			1
+      }
+    }
+  }
+}
